@@ -1,0 +1,115 @@
+<template>
+  <div>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <h1 class="title">Jessica</h1>
+        </a>
+        
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">Home</a>
+          
+          <a class="navbar-item" href="/#blog">Blog</a>
+          <nuxt-link to="contatti" class="navbar-item">ciao</nuxt-link>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-medium is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Ciao sono Jessica!</h1>
+          <h2 class="subtitle">Questo è il mio blog</h2>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="blog">
+      <div class="container">
+        <h1 class="title">Blog</h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into
+          <strong>sections</strong>, like the one you're currently reading
+        </h2>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <nuxt-link to="post/titolo">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="https://images.unsplash.com/photo-1548065822-2cd6b99550f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                      alt="Placeholder image"
+                    >
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h1>Titolo</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris.
+                    <a>@bulmaio</a>.
+                    <a href="#">#css</a>
+                    <a href="#">#responsive</a>
+                    <br>
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+              </div>
+            </nuxt-link>
+          </div>
+          <div class="column">
+            <nuxt-link to="post/presentazione">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="https://images.unsplash.com/photo-1548125544-2d4cad80de29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"
+                      alt="Placeholder image"
+                    >
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h1>Presentazione</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris.
+                    <a>@bulmaio</a>.
+                    <a href="#">#css</a>
+                    <a href="#">#responsive</a>
+                    <br>
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+import Logo from "~/components/Logo.vue";
+
+export default {
+  components: {
+    Logo
+  }
+};
+</script>

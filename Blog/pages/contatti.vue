@@ -1,0 +1,6 @@
+<template>
+<div>
+    <h1 class="title">Contatti</h1>
+    <nuxt-link to="/"> Torma alla home </nuxt-link>
+</div>
+</template>
