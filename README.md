@@ -18,7 +18,15 @@ TechMeUp workshop su come realizzare il proprio blog personale utilizzando Nuxt.
     - Attendi qualche secondo finchè non ti compariranno sul termnale una serie di domande per configurare il progetto fai le sequenti cose:
        - Alla prima domanda premi `invio`
        - Alla seconda domanda premi `invio`
-       - Alla terza domanda selezione `none`
+       - Alla terza domanda seleziona `none` con le freccette e premi `invio`
+       - Alla quarta domanda premi `invio`
+       - Alla quinta domanda seleziona `Bulma`
+       - Alla sesta domanda seleziona `none` con le freccette e premi `invio`
+       - Alla settima domanda seleziona `universal` con le freccette e premi `invio`
+       - Alla ottava domanda inserisci il tuo nome
+       - Alla settima domanda seleziona `npm` con le freccette e premi `invio`
+    - Attendi la creazione progetto
+
     Vi chiederà se installare dei programmi aggiuntivi a noi servirà Bulma, un framework CSS che permettere di rendere lo stile del nostro sito carino senza troppe fatiche
 
     Il **terminale** è un programma già installato nel tuo computer dal quale puoi comunicare con il computer in **modo testuale** puoi avviare programmi, navigare nelle cartelle, creare cartelle, e tante altre cose.
