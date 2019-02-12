@@ -2,22 +2,33 @@
 
 TechMeUp workshop su come realizzare il proprio blog personale utilizzando Nuxt.js e Vue.js
 
-## Installazione di Nuxt.js
+## Prerequisiti
+
+- Devi aver installato sul pc [Node.js](https://nodejs.org/it/download/)
+- Avere almeno un editor per scrivere codice, noi consigliamo [Visual Studio Code](https://code.visualstudio.com/download)
+
+## Avvio del progetto di Nuxt.js
 
 1. Vai nel desktop e crea una cartella con il nome `tech-me-up`
-2. Apri la cartella creata con il programma per scrivere codice: Visual Studio Code
-3. Apri il terminale e vai sul desktop con il comando `cd desktop`
-4. Questo comando ti permetterà di creare un esempio di progetto Nuxt.js già funzionante. Digita  `npm create nuxt-app tech-me-up`
+2. Apri il programma **Visual Studio Code**
+3. Da **Visual Studio Code** vai `File > Apri cartella...` e seleziona `tech-me-up`
+4. Apri il terminale da **Visual Studio Code** da `Visualizza > Terminale integrato`
+5. Digita  `npm create nuxt-app tech-me-up`, questo comando ti permetterà di creare un esempio di progetto Nuxt.js già funzionante.
+
 Vi chiederà se installare dei programmi aggiuntivi a noi servirà Bulma, un framework CSS che permettere di rendere lo stile del nostro sito carino senza troppe fatiche
 
-Il terminale è un programma già installato nel tuo computer dal quale puoi comunicare con il computer in modo testuale puoi avviare programmi, navigare nelle cartelle, creare cartelle, e tante altre cose.
+Il **terminale** è un programma già installato nel tuo computer dal quale puoi comunicare con il computer in **modo testuale** puoi avviare programmi, navigare nelle cartelle, creare cartelle, e tante altre cose.
 
 5. Entra nella cartella utilizzando il comando `cd tech-me-up`
-6. Per aprire il tuo sito basta digitare 
+6. Per aprire il tuo sito basta digitare
 `npm run dev`
 Per avviare il progetto
 
-Cartella Pages è la più importante che contiene il file `index.vue` è la tua homepage
+## Struttura di un progetto Nuxt
+
+### Pages
+
+La cartella **Pages** è la più importante che contiene il file `index.vue` è la tua homepage
 Puoi create tante pagine quante ne vuoi
 
 Il file .vue è diviso in 3 parti:
