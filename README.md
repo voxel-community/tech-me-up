@@ -46,11 +46,8 @@ Il file `.vue` è diviso in 3 parti:
 - **Script** contiene tutte le funzioni per rendere interattivo il tuo sito.
 - **Style** contiene tutti gli stili in CSS. Il CSS viene utilizzato per gestire tutta la parte estetica di una pagina web come i colori, i caratteri, lo sfondo.
 
-Oggi utilizzeremo [Bulma](https://bulma.io/).
+> Oggi utilizzeremo [Bulma](https://bulma.io/) che ti mette a disposizione gli strumenti per costruire la tua pagina web, in particolare ti dà degli stili CSS.
 
-Bulma è come una cassetta degli attrezzi, ti mette a disposizione gli strumenti e tu puoi prendere quello che ti serve per costruire la tua pagina web, in particolare ti dà degli stili CSS carini, già pronti per essere utilizzati 😊
-
-Utilizzando Bulma, il tuo sito sarà già mobile-friendly, ovvero i contenuti del sito saranno facilmente visualizzabili sia in grandi che piccoli schermi 📱
 
 * cancellare tutti gli stili
 * salvataggio automatico su Visual Studio Code --> file > autosave
