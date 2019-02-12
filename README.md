@@ -1,6 +1,7 @@
 # TechMeUp
 
-TechMeUp workshop su come realizzare il proprio blog personale utilizzando Nuxt.js e Vue.js
+TechMeUp è un workshop su come realizzare il proprio blog personale utilizzando Nuxt.js e Vue.js.
+Vai su questo link per avere un anteprima di quello che crearemo `sad-pare.netlyfy.com`
 
 ## Prerequisiti
 
@@ -48,10 +49,23 @@ Il file `.vue` è diviso in 3 parti:
 
 > Oggi utilizzeremo [Bulma](https://bulma.io/) che ti mette a disposizione gli strumenti per costruire la tua pagina web, in particolare ti dà degli stili CSS.
 
+## Ora si comincia
 
-* cancellare tutti gli stili
-* salvataggio automatico su Visual Studio Code --> file > autosave
-* tasto destro `format document`
+Sostituisci tutto il contenuto di index.vue così possiamo iniziare a creare la nostra pagina web
+
+``` bash
+<template>
+  <div>
+
+  </div>
+</template>
+```
+
+## Comandi utili
+
+- salvataggio automatico su Visual Studio Code --> file > autosave
+- tasto destro `format document`
+
 
 Nel template c'è tutta la parte di HTML e CSS
 
