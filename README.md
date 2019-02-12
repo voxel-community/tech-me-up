@@ -51,7 +51,8 @@ Il file `.vue` è diviso in 3 parti:
 
 ## Ora si comincia
 
-Sostituisci tutto il contenuto di index.vue così possiamo iniziare a creare la nostra pagina web
+Sostituisci tutto il contenuto di `index.vue`
+con:
 
 ``` bash
 <template>
