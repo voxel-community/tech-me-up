@@ -1,33 +1,32 @@
 <template>
   <div>
+    <!-- NAVBAR CON TRE PULSANTI -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item">
           <h1 class="title">Jessica</h1>
         </a>
-        
         <a
           role="button"
           class="navbar-burger burger"
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
+          data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item">Home</a>
-          
           <a class="navbar-item" href="/#blog">Blog</a>
-          <nuxt-link to="contatti" class="navbar-item">ciao</nuxt-link>
+          <nuxt-link to="contatti" class="navbar-item">Contatti</nuxt-link>
         </div>
       </div>
     </nav>
+
+    <!-- SEZIONE HERO COLORATA  -->
     <section class="hero is-medium is-primary is-bold">
       <div class="hero-body">
         <div class="container">
@@ -36,6 +35,9 @@
         </div>
       </div>
     </section>
+
+
+    <!-- SEZIONE TITOLO: BLOG -->
     <section class="section" id="blog">
       <div class="container">
         <h1 class="title">Blog</h1>
@@ -45,18 +47,21 @@
         </h2>
       </div>
     </section>
+
+    <!-- 2 COLONNE CON 2 CARD DEI POST -->
     <section class="section">
       <div class="container">
         <div class="columns">
           <div class="column">
             <nuxt-link to="post/titolo">
+
+              <!-- CARD CON COLLEGAMENTO AL PRIMO POST -->
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
                       src="https://images.unsplash.com/photo-1548065822-2cd6b99550f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                      alt="Placeholder image"
-                    >
+                      alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
@@ -75,13 +80,14 @@
           </div>
           <div class="column">
             <nuxt-link to="post/presentazione">
+
+             <!-- CARD CON COLLEGAMENTO AL SECONDO POST -->
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
                       src="https://images.unsplash.com/photo-1548125544-2d4cad80de29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"
-                      alt="Placeholder image"
-                    >
+                      alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
