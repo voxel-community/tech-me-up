@@ -62,31 +62,28 @@ con:
 </template>
 ```
 
+Per navigare tra le pagine usa il tag `nuxt-link`, automaticamente crea i collegamenti
+
 ## Comandi utili
 
 - salvataggio automatico su Visual Studio Code --> file > autosave
 - tasto destro `format document`
 
-
-Nel template c'è tutta la parte di HTML e CSS
-
 Installare Vuetur che rende il tuo codice più leggibile
 
-Per navigare tra le pagine usa il tag `nuxt-link`, automaticamente crea i collegamenti
+## Pubblicazione con Netlify
 
-Pubblicare con Netlify
-Da fare:
+Bisongna rendere comprensibile il nostro progetto dal browser
+
+``` bash
+npm run generate
+```
+
+Refresh per vedere la dist
+Trascinare dal finder la dist
+
+## TODO
 
 I vari passi a grandi linee
 Glossario
 Comandi utili
-
-Bisongna rendere comprensibile il nostro progetto dal browser
-
-```
-npm run generate
-```
-
-Refreshe per vedere la dist
-
-Trascinare dal finder la dist
