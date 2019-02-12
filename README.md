@@ -28,25 +28,29 @@ TechMeUp workshop su come realizzare il proprio blog personale utilizzando Nuxt.
        - Alla settima domanda seleziona `npm` con le freccette e premi `invio`
     - Attendi la creazione progetto
 
-
-    
-
-6. Entra nella cartella utilizzando il comando `cd tech-me-up`
+6. Digita `cd tech-me-up` per entrare nella cartella appena creata e premi `invio`
 7. Per aprire il tuo sito basta digitare
-`npm run dev`
-Per avviare il progetto
+    `npm run dev`
 
 ## Struttura di un progetto Nuxt
 
 ### Pages
 
-La cartella **Pages** è la più importante che contiene il file `index.vue` è la tua homepage
-Puoi create tante pagine quante ne vuoi
+La cartella **Pages** è la più importante perchè contiene il file `index.vue` che è la tua homepage.
+In questa cartella puoi creare quante pagine
+Per ogni altra pagina che vuoi aggiungere, crea dei file che terminano in `.vue`.
 
-Il file .vue è diviso in 3 parti:
-Template deve avere 1 solo elemento
-Script
-Style
+Il file `.vue` è diviso in 3 parti:
+
+- **Template** contiene i tag HTML, che definiscono la struttura di una pagina web dal titolo, ai paragrafi, all'impaginazione.
+- **Script** contiene tutte le funzioni per rendere interattivo il tuo sito.
+- **Style** contiene tutti gli stili in CSS. Il CSS viene utilizzato per gestire tutta la parte estetica di una pagina web come i colori, i caratteri, lo sfondo.
+
+Oggi utilizzeremo [Bulma](https://bulma.io/).
+
+Bulma è come una cassetta degli attrezzi, ti mette a disposizione gli strumenti e tu puoi prendere quello che ti serve per costruire la tua pagina web, in particolare ti dà degli stili CSS carini, già pronti per essere utilizzati 😊
+
+Utilizzando Bulma, il tuo sito sarà già mobile-friendly, ovvero i contenuti del sito saranno facilmente visualizzabili sia in grandi che piccoli schermi 📱
 
 * cancellare tutti gli stili
 * salvataggio automatico su Visual Studio Code --> file > autosave
