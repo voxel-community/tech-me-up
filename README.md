@@ -87,3 +87,6 @@ Trascinare dal finder la dist
 I vari passi a grandi linee
 Glossario
 Comandi utili
+
+Pubblichiamo dopo aver fatto l'index
+
