@@ -1,8 +1,8 @@
 {
-  "name": "progetto1",
+  "name": "tech-me-up",
   "version": "1.0.0",
   "description": "My majestic Nuxt.js project",
-  "author": "Jessica",
+  "author": "Girlscodeit",
   "private": true,
   "scripts": {
     "dev": "nuxt",

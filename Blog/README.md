@@ -1,4 +1,4 @@
-# progetto1
+# Tech Me Up
 
 > My majestic Nuxt.js project
 
