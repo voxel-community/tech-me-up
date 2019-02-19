@@ -32,15 +32,15 @@ Prima di iniziare devi aver installato sul pc **2 programmi**:
 
 ## Struttura di un progetto Nuxt
 
-### La cartella **Pages**
+### La cartella **pages**
 
-La cartella **Pages** è il cuore di un progetto Nuxt. Al suo interno potrai creare file e cartelle che diventeranno le pagine e sottopagine del tuo sito.
+La cartella **pages** è il cuore di un progetto Nuxt. Al suo interno potrai creare file e cartelle che diventeranno le pagine e sottopagine del tuo sito.
 
-Nella cartella **Pages**, troverai già un file `index.vue`.
+Nella cartella **pages**, troverai già un file `index.vue`.
 >***Index*** è il nome standard che viene assegnato ai file per rappresentare la home page, ovvero la prima pagina che viene visualizzata quando si naviga su un sito.
 
-Nella cartella **Pages** puoi creare quanti file e cartelle desideri, l'importante è che tutti i file che aggiungi terminino con `.vue`.
-> Ad esempio: Se vuoi creare una pagina *contatti* che venga visualizzata sul tuo sito attraverso l'url `https://il-mio-sito/contatti`, ti basta creare in Pages un file `contatti.vue`.
+Nella cartella **pages** puoi creare quanti file e cartelle desideri, l'importante è che tutti i file che aggiungi terminino con `.vue`.
+> Ad esempio: Se vuoi creare una pagina *contatti* che venga visualizzata sul tuo sito attraverso l'url `https://il-mio-sito/contatti`, ti basta creare in pages un file `contatti.vue`.
 
 ### Struttura file **.vue**
 
@@ -50,19 +50,6 @@ Un file `.vue` è composto da 3 parti:
 - **Script** contiene tutte le funzioni per rendere interattivo il tuo sito, utilizzando *Javascript*.
 - **Style** contiene tutti gli stili in *CSS*. Il *CSS* viene utilizzato per gestire tutta la parte estetica di una pagina web come i colori, i caratteri, lo sfondo.
   > Per il CSS oggi utilizzeremo [Bulma](https://bulma.io/) che ti mette a disposizione gli strumenti per costruire la tua pagina web, in particolare ti dà degli stili CSS base.
-
-### Collegare le **pagine .vue** fra loro
-
-In Nuxt.js esiste un componente che serve per creare dei collegamenti tra pagine e sottopagine. Per esempio in questo caso rimandiamo alla pagina `posts`:
-
-`<nuxt-link to="/posts">Blog</nuxt-link>`
-
-Come vedrai è un tag composto da 3 parti:
-
-- **Tag** `<nuxt-link>`
-- **To**: attributo in cui puoi indicare la pagina con cui vuoi creare il collegamento
-- **Link**: l'elemento visibile sul sito che se cliccato ti porterà alla pagina
-  > Può essere del semplice testo oppure un elemento più complesso come un'immagine, una card, un bottone.
 
 ## Ora si comincia
 
@@ -79,6 +66,133 @@ Sostituisci tutto il contenuto di `index.vue` con:
 
 ## Personalizza il tuo sito
 
+### Hero
+
+L'elemento **hero** è una sezione, simile a un banner, che puoi aggiungere al tuo sito.
+Se vuoi puoi personalizzare la sua dimensione e aggiungere un colore di sfondo.
+
+``` bash
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Ciao!</h1>
+      <h2 class="subtitle">Questo è un blog</h2>
+    </div>
+  </div>
+</section>
+```
+
+### Card
+
+La **card** è un riquadro a cui puoi aggiungere del testo e un'immagine
+
+``` bash
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img
+        src="https://images.unsplash.com/photo-1548065822-2cd6b99550f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="content">
+      <h1>Arduino</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus nec iaculis mauris.
+      <a>@girlscodeit</a>.
+      <a href="#">#css</a>
+      <a href="#">#responsive</a>
+      <br>
+      <time datetime="2016-1-1">11:09 PM - 1 Jan 2019</time>
+    </div>
+  </div>
+</div>
+```
+
+### Layout di base
+
+Come avrai notato, la card non è centrata. Per avere dei contenuti più ordinati devi infatti affidarti agli elementi che permettono di strutturare e organizzare i contenuti, ovvero **section** e **div**.
+> Div e section sono contenitori che racchiudono al loro interno altri elementi e permettono di dividere in sezioni la pagina.
+
+- Crea una nuova `section`, cioè un blocco distinto all'interno della pagina.
+- Al suo interno crea un `div` con classe `container`. È una classe di Bulma che ti permette di centrare il contenuto orizzontalmente.
+
+``` bash
+<section class="section">
+  <div class="container">
+    Aggiungi quello che desideri
+  </div>
+</section>
+
+```
+
+### Colonne
+
+Per poter avere 2 card una accanto all'altra e non a capo puoi creare delle colonne.
+
+``` bash
+<div class="columns">
+  <div class="column">
+    Prima colonna
+  </div>
+  <div class="column">
+    Seconda colonna
+  </div>
+  <div class="column">
+    Terza colonna
+  </div>
+</div>
+```
+
+### Creiamo la pagina per un post
+
+Per creare una sotto pagina basta creare nella cartella `pages` un'altra cartella che denomineremo `posts`.
+
+TODO
+
+### Navbar
+
+La navbar è il menù che solitamente trovi in cima alla pagina che ti mostra le sezioni o le pagine presenti sul sito.
+
+``` bash
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <h1 class="title">Girlscodeit</h1>
+    </a>
+    <a
+      role="button"
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">Home</a>
+      <a class="navbar-item" href="/#blog">Blog</a>
+      <nuxt-link to="contatti" class="navbar-item">Contatti</nuxt-link>
+    </div>
+  </div>
+</nav>
+```
+
+#### Collegare le **pagine .vue** fra loro
+
+In Nuxt.js esiste un componente che serve per creare dei collegamenti tra pagine e sottopagine. Per esempio in questo caso rimandiamo alla pagina `posts`:
+
+`<nuxt-link to="/posts">Blog</nuxt-link>`
+
+Come vedrai è un tag composto da 3 parti:
+
+- **Tag** `<nuxt-link>`
+- **To**: attributo in cui puoi indicare la pagina con cui vuoi creare il collegamento
+- **Link**: l'elemento visibile sul sito che se cliccato ti porterà alla pagina
+  > Può essere del semplice testo oppure un elemento più complesso come un'immagine, una card, un bottone.
 
 ## Comandi utili
 
